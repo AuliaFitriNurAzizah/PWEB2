@@ -77,3 +77,4 @@ $mahasiswa1->jurusan = "Teknik Informatika";
 echo $mahasiswa1->tampilkanData();
 ?>
 ```
+![alt text](<class objek.png>)

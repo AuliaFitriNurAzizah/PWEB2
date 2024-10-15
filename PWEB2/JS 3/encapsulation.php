@@ -1,16 +1,21 @@
 <?php
 // Kelas Person
 class Person {
-    protected $name;
+    private $name;
 
     // Constructor untuk menginisialisasi nama
     public function __construct($name) {
         $this->name = $name;
     }
 
-    // Metode untuk mendapatkan nama
+    // Getter untuk nama
     public function getName() {
-        return "Nama: " . $this->name;
+        return $this->name;
+    }
+
+    // Setter untuk nama
+    public function setName($name) {
+        $this->name = $name;
     }
 }
 
@@ -34,19 +39,9 @@ class Student extends Person {
         $this->studentID = $studentID;
     }
 
-    // Override metode getName()
+    // Override metode getName() untuk menampilkan nama dan NIM
     public function getName() {
-        return "Mahasiswa: " . $this->name . " (NIM: $this->studentID)";
-    }
-
-    // Setter untuk name
-    public function setName($name) {
-        $this->name = $name;
-    }
-
-    // Getter untuk name
-    public function getNameEncapsulated() {
-        return $this->name;
+        return "Mahasiswa: " . parent::getName() . " (NIM: $this->studentID)";
     }
 }
 
@@ -60,9 +55,9 @@ class Teacher extends Person {
         $this->teacherID = $teacherID;
     }
 
-    // Override metode getName()
+    // Override metode getName() untuk menampilkan nama dan ID Dosen
     public function getName() {
-        return "Dosen: " . $this->name . " (ID Dosen: $this->teacherID)";
+        return "Dosen: " . parent::getName() . " (ID Dosen: $this->teacherID)";
     }
 }
 
