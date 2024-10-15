@@ -118,8 +118,8 @@ $dosen = new Dosen("Dr. Budi Santoso", "123456789");
 $mahasiswa = new Mahasiswa("Aulia Fitri Nur Azizah", "230102055");
 
 // Menampilkan peran masing-masing
-echo $dosen->getName() . " adalah seorang " . $dosen->getRole() . "\n";
-echo $mahasiswa->getName() . " adalah seorang " . $mahasiswa->getRole() . "\n";
+echo $dosen->getRole() . " adalah seorang " . $dosen->getRole() . "\n";
+echo $mahasiswa->getRole() . " adalah seorang " . $mahasiswa->getRole() . "\n";
 
 // Mengajukan Jurnal Dosen
 $jurnalDosen = new JurnalDosen("Penelitian AI", $dosen->getNIDN());
