@@ -17,6 +17,6 @@ class Mahasiswa {
 }
 
 // Instansiasi objek dari class Mahasiswa dengan constructor
-$mahasiswa1 = new Mahasiswa("Aulia Fitri Nur Azizah", "230102055", "Teknik Informatika");
+$mahasiswa1 = new Mahasiswa("Aulia Fitri Nur Azizah", "230102055" ,"Teknik Informatika");
 echo $mahasiswa1->tampilkanData();
 ?>
